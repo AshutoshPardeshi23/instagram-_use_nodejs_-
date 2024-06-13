@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+</head>
+
+<body>
+    <div id="top_div">
+        <div id="logo">
+            <img src="/images/instagram.jpg" alt="">
+        </div>
+
+        <div id="top_left">
+            <a href="/lick">
+                <img id="top_like" src="/images/like top.jpg" alt="">
+            </a>
+            <a href="/chat">
+                <img id="top_chat" src="/images/comment.jpg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div id="states_div">
+        <box id="states_mi">
+            <img src="/uploads/<%= user.dp_img %>" alt="">
+        </box>
+
+        <box id="states">
+            <img src="/images/poto4.jpg" alt="">
+        </box>
+        <box id="states">
+            <img src="/images/poto6.jpg" alt="">
+        </box>
+        <box id="states">
+            <img src="/images/poto8.jpg" alt="">
+        </box>
+        <box id="states">
+            <img src="/images/poto5.jpeg" alt="">
+        </box>
+        <box id="states">
+            <img src="/images/poto7.jpg" alt="">
+    </div>
+
+    <div id="all_profile">
+        <% post.reverse().forEach(function(elem){ %>
+            <div id="card">
+                <div id="card_top">
+                    <div>
+                        <img src="/uploads/<%= elem.user.dp_img %>" alt="">
+                    </div>
+                    <div>
+                        <a href="/found/user/<%= elem.user._id %>">
+                            <%= elem.user.username %>
+                        </a>
+                    </div>
+                    <div>
+                        <p>1d</p>
+                    </div>
+                </div>
+
+                <div id="card_img">
+                    <img src="/uploads/<%= elem.img %>" alt="">
+                </div>
+
+                <div id="card_botam">
+                    <div>
+                        <% if( elem.likes.indexOf(user._id) !== -1 ){ %>
+                            <a href="/lick/post/<%= elem._id %>"><img id="like" src="/dp_img/red like.jpg" alt=""></a>
+                            <% }else{ %>
+                                        <a href="/lick/post/<%= elem._id %>"><img id="like" src="/images/like.jpg" alt=""></a>
+                                <% } %>
+                                    <img id="coment" src="/images/comment bar.jpg" alt="">
+                                    <img id="shere" src="/images/share.jpg" alt="">
+                    </div>
+                    <div>
+                        <img id="card_save" src="/images/save.jpg" alt="">
+                    </div>
+                </div>
+
+                <div id="sow_commen">
+                    <p>
+                        <%= elem.likes.length %> likes
+                    </p>
+                    <p>
+                        <%= elem.user.username %> hello
+                    </p>
+                </div>
+
+            </div>
+            <% }) %>
+
+    </div>
+
+    <div id="bottam_div">
+        <a href="/profile">
+            <img src="\images\image.png" alt="">
+        </a>
+        <a href="/search">
+            <img src="\images\image copy.png" alt="">
+        </a>
+        <a href="/post">
+            <img src="\images\phost.jpg" alt="">
+        </a>
+        <a href="/dp_profile">
+            <img id="profile_logo" src="/uploads/<%= user.dp_img %>" alt="">
+        </a>
+    </div>
+
+    <script src="/javascripts/profile.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/dp_profile.css">
+</head>
+
+<body>
+
+
+    <div id="top_div">
+        <div id="username">
+            <h1>
+                <%= user.username %>
+            </h1>
+            <img id="usr" src="/dp_img/poto8.jpg" alt="">
+        </div>
+
+        <div id="top_left">
+            <img src="/dp_img/photo1.jpg" alt="">
+            
+            <a href="/post"><img src="/dp_img/poto2.jpg" alt=""></a>
+
+            <a href="/logout"><img src="/dp_img/photo.jpg" alt=""></a>
+        </div>
+
+    </div>
+
+    <div id="profile_data">
+
+        <div id="dp_img">
+            <img src="/uploads/<%= user.dp_img %>" alt="">
+        </div>
+
+        <div id="followers_data">
+            <div id="followers_num">
+                <h1>
+                    <%= user.post.length %>
+                </h1>
+                <h1>
+                    <%= user.follow.length %>
+                </h1>
+                <h1>
+                    <%= user.following.length %>
+                </h1>
+            </div>
+            <div id="data_name">
+                <p>posts</p>
+                <p>followers</p>
+                <p>following</p>
+            </div>
+        </div>
+
+        <div id="profile_byo">
+            <h4>
+                <%= user.fullname %>
+            </h4>
+            <p>
+                <%= user.bio %>
+            </p>
+        </div>
+
+        <div id="tree_b">
+            <a href="/chenge_dp">
+                <button id="edit_b">Edit profile</button>
+            </a>
+            <button id="Share_b">Share profile</button>
+            <button id="add_folow"><img id="add_b1" src="/dp_img/add.jpg" alt=""></button>
+        </div>
+    </div>
+
+    <div id="dp_save_states">
+
+        <div id="prmanet_states">
+            <div id="all_states">
+                <img id="states_img" src="/dp_img/photo3.jpg" alt="">
+            </div>
+            <p>New</p>
+        </div>
+
+    </div>
+
+    <div id="photo_tag">
+        <div id="p_p">
+            <img id="profile_photo" src="/dp_img/photo4.jpg" alt="">
+        </div>
+        <div id="p_t">
+            <img id="profilr_tag" src="/dp_img/poto 7.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="all_photo">
+        <div id="all_post">
+            <% user.post.reverse().forEach(function(elem){ %>
+                <a href="/user_post">
+                <img src="/uploads/<%= elem.img %>" alt="">
+                </a>
+                <% }); %>
+        </div>
+
+        <div id="post_tag">
+            <img src="/uploads/<%= user.tag %>" alt="">
+        </div>
+    </div>
+
+    <div id="bottam_div">
+        <a href="/profile">
+            <img src="\images\image.png" alt="">
+        </a>
+        <a href="/search">
+            <img src="\images\image copy.png" alt="">
+        </a>
+        <a href="/post">
+            <img src="\images\phost.jpg" alt="">
+        </a>
+        <a href="/dp_profile">
+            <img id="profile_logo" src='/uploads/<%= user.dp_img %>' alt="">
+        </a>
+    </div>
+
+
+
+    <script src="/javascripts/dp_profile.js"></script>
+</body>
+
+</html>

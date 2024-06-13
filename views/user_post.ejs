@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+</head>
+
+<body>
+    <div id="top_div">
+        <div id="arow">
+            <a href="/dp_profile"><img src="/dp_img/arow.jpg" alt=""></a>
+            <h1>post</h1>
+        </div>
+    </div>
+
+    <div id="all_profile_post">
+
+        <% user.post.reverse().forEach(function(elem){ %>
+            <div id="card">
+                <div id="card_top">
+                    <div>
+                        <img src="/uploads/<%= user.dp_img %>" alt="">
+                    </div>
+                    <div>
+                        <a href="">
+                            <%= user.username %>
+                        </a>
+                    </div>
+                    <p>
+                        <%= elem.createdAt %>
+                    </p>
+                    <div id="delete">
+                        <a id="post_link" href="/post/delete/<%= elem._id %>"></a>
+                        <h1 id="post_D">Delete</h1>
+                    </div>
+                </div>
+
+                <div id="card_img">
+                    <img src="/uploads/<%= elem.img %>" alt="">
+                </div>
+
+                <div id="card_botam">
+                    <div>
+                        <% if( elem.likes.indexOf(user._id) !==-1 ){ %>
+                            <a href="/lick/post/<%= elem._id %>"><img id="like" src="/dp_img/red like.jpg" alt=""></a>
+                            <% }else{ %>
+                                <a href="/lick/post/<%= elem._id %>"><img id="like" src="/images/like.jpg" alt=""></a>
+                                <% } %>
+                                    <img id="coment" src="/images/comment bar.jpg" alt="">
+                                    <img id="shere" src="/images/share.jpg" alt="">
+                    </div>
+                    <div>
+                        <img id="card_save" src="/images/save.jpg" alt="">
+                    </div>
+                </div>
+
+                <div id="sow_commen">
+                    <p>
+                        <%= elem.likes.length %> likes
+                    </p>
+                    <p>
+                        <%= elem.user.username %> hello
+                    </p>
+                </div>
+
+            </div>
+            <% }) %>
+
+    </div>
+
+    <div id="bottam_div">
+        <a href="/profile">
+            <img src="\images\image.png" alt="">
+        </a>
+        <a href="/search">
+            <img src="\images\image copy.png" alt="">
+        </a>
+        <a href="/post">
+            <img src="\images\phost.jpg" alt="">
+        </a>
+        <a href="/dp_profile">
+            <img id="profile_logo" src="/uploads/<%= user.dp_img %>" alt="">
+        </a>
+    </div>
+
+    <script>
+
+        let post_D = document.querySelector('#post_D');
+        let post_link = document.querySelector('#post_link');
+
+        post_D.addEventListener('click', () => {
+            var deleteConfirm = window.confirm("Are you sure your post to delete this?");
+            if (deleteConfirm) {
+                post_link.click();
+                alert('post Delete');
+            }
+        });
+    </script>
+</body>
+
+</html>

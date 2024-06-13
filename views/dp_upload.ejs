@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/upload.css">
+</head>
+
+<body>
+    <form class="topdiv-form" action="/chenge_dp" method="post" enctype="multipart/form-data">
+        <div id="alldiv">
+            <div id="div1">
+                <input type="file" id="t1" name="file" placeholder="chus image">
+            </div>
+            <div id="upload_p">
+                <h4 onclick="document.getElementById('t1').click()">Update Images
+                </h4>
+            </div>
+            <div id="div2">
+                <input type="text" id="t2" name="u_name" placeholder="chenge flluname" value="<%= user.fullname %>">
+            </div>
+
+            <div id="div3">
+                <textarea type="text" name="u_Caption" id="t3" placeholder="chenge caption"><%= user.bio %></textarea>
+            </div>
+
+            <div id="div4">
+                <button type="submit">SUBMIT</button>
+            </div>
+        </div>
+
+    </form>
+
+
+
+
+
+
+</body>
+
+</html>
