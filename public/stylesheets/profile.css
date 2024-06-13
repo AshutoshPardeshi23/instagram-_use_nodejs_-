@@ -1,0 +1,322 @@
+* {
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body,
+html {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 62.5%;
+}
+
+a {
+    list-style: none;
+    direction: none;
+}
+
+#top_div {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    top: 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#logo {
+    position: relative;
+    width: 16rem;
+    height: 3.7rem;
+    overflow: hidden;
+    top: 0;
+}
+
+#logo img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+#arow{
+    position: relative;
+    width: 16rem;
+    height: 3.7rem;
+    overflow: hidden;
+    text-align: start;
+    top: 0;
+}
+#arow img{
+    position: relative;
+    width: 4rem;
+    left: .5rem;
+    height: 100%;
+}
+#arow h1{
+    position: relative;
+    font-size: 3.5rem;
+    left: 6rem;
+    top: -5rem;
+}
+#delete{
+    position: relative;
+    width: 18rem;
+    height: 100%;
+    left: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    align-content: center;
+    color: #5798ee;
+}
+#delete h1{
+    position: relative;
+    font-size: 1rem;
+    color: #5798ee;
+}
+#top_left {
+    position: relative;
+    width: 18rem;
+    height: 100%;
+    left: 62%;
+    align-content: center;
+    top: -3.6rem;
+}
+
+#top_left #top_like {
+    margin-left: 1.6rem;
+    height: 4.5rem;
+    width: 4rem;
+    margin-bottom: .5rem;
+}
+
+#top_left #top_chat {
+    margin-left: 1.6rem;
+    height: 5.9rem;
+    width: 4.7rem;
+}
+
+#states_div {
+    position: relative;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    scrollbar-color: transparent;
+    z-index: 0;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    margin-top: 5rem;
+}
+#states_mi {
+    position: relative;
+    min-width: 10rem;
+    margin-left: .2rem;
+    border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+#states_mi img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#states {
+    position: relative;
+    min-width: 10rem;
+    margin-left: .2rem;
+    border-radius: 50%;
+    border-radius: 50%;
+    border: .3rem inset rgb(255, 0, 0);
+    overflow: hidden;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+#states img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#all_profile {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#all_profile_post {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 7rem;
+    overflow: hidden;
+}
+
+#card {
+    height: 61.5rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+#card_top {
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    text-align: start;
+}
+
+#card_top img {
+    position: relative;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    left: 2rem;
+    top: 1rem;
+}
+
+#card_top a {
+    position: relative;
+    left: 2.2rem;
+    font-size: 1.2rem;
+    gap: .2rem;
+    top: 1rem;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+}
+
+#card_top p {
+    position: relative;
+    left: 2.5rem;
+    top: 1rem;
+    font-size: 1.2rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* card img */
+#card_img {
+    position: relative;
+    height: 50rem;
+    width: 100%;
+}
+
+#card_img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#card_botam {
+    position: relative;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#card_botam img {
+    position: relative;
+    height: 100%;
+    width: 3rem;
+    left: 2rem;
+    margin-left: .5rem;
+}
+
+#card_botam #card_save {
+    left: -1rem;
+}
+
+#sow_commen {
+    position: relative;
+    height: 4.6rem;
+    width: 100%;
+    overflow: hidden;
+    text-align: start;
+}
+
+#sow_commen p {
+    position: relative;
+    left: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#bottam_div {
+    position: fixed;
+    max-height: 6rem;
+    min-height: 6rem;
+    width: 100%;
+    background-color: #fff;
+    top: 84rem;
+    display: flex;
+    align-items: center;
+}
+
+#bottam_div img {
+    height: 4rem;
+    width: 4rem;
+    margin-left: 5.4rem;
+}
+
+#bottam_div #profile_logo {
+    border-radius: 50%;
+}
+
+
+
+@media screen and (min-width: 350px) {
+    html {
+        font-size: 50.5%;
+    }
+
+    #bottam_div {
+        top: 92%;
+    }
+
+    #top_left {
+        top: -4.4rem;
+    }
+
+    #top_div {
+        height: 4.5rem;
+    }
+} 
+
+@media screen and (min-width: 390px) {
+    html {
+        font-size: 57.5%;
+    }
+
+    #bottam_div {
+        top: 78.3rem;
+    }
+
+    #top_left {
+        top: -4rem;
+    }
+
+    #top_div {
+        height: 4.5rem;
+    }
+} 
+
+@media screen and (min-width: 411px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #bottam_div {
+        top: 93%;
+    }
+} 
+
+/* top: 63rem; */

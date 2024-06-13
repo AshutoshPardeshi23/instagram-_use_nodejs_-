@@ -1,0 +1,412 @@
+* {
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body,
+html {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+
+a {
+    list-style: none;
+    direction: none;
+}
+
+#top_div {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    top: 0;
+    display: flex;
+    background-color: #ffffff;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+#username {
+    position: relative;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    left: 1rem;
+}
+
+#username #usr {
+    position: relative;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-left: .2rem;
+    top: .4rem;
+}
+
+#username h1 {
+    font-size: 2.5rem;
+    top: -1.5rem;
+}
+
+#top_left {
+    position: relative;
+    left: -2rem;
+}
+#top_div img {
+    position: relative;
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-left: 1.3rem;
+}
+
+#profile_data {
+    height: 40rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+#dp_img {
+    position: relative;
+    height: 12rem;
+    width: 12rem;
+    top: 6rem;
+    left: 1rem;
+    border-radius: 50%;
+    /* border: .5rem solid red; */
+    overflow: hidden;
+}
+
+#dp_img img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#followers_data {
+    position: relative;
+    height: 7rem;
+    width: 8rem;
+    left: 50%;
+    top: -4.5rem;
+    display: inline;
+}
+
+#followers_num {
+    position: relative;
+    width: 8rem;
+    gap: 5rem;
+    font-size: 1.5rem;
+    display: flex;
+}
+
+#data_name {
+    position: relative;
+    display: flex;
+    width: 10rem;
+    font-size: 1.5rem;
+    gap: 2.3rem;
+    left: -1.0rem;
+    font-weight: 500;
+}
+
+#profile_byo {
+    position: relative;
+    width: 30rem;
+    height: 15rem;
+    top: -1rem;
+    left: 2rem;
+    text-align: start;
+    overflow: hidden;
+}
+
+#profile_byo p {
+    position: relative;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+#option{
+    position: absolute;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#other{
+    position: relative;
+    z-index: 2;
+    width: 30rem;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: start;
+    left: 100%;
+    overflow: hidden;
+    border: .3rem solid black;
+}
+#other a{
+    position: relative;
+    height: 1rem;
+    width: 100%;
+    color: #fff;
+    outline: none;
+    background-color: #fff;
+    text-decoration: none;
+}
+#other h1{
+    position: relative;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    border-bottom: .2rem solid black;
+    color: #000000;
+    text-decoration: none;
+}
+#follow{
+    position: relative;
+    width: 35rem;
+    height: 4.5rem;
+    margin-left: 3.6rem;
+    border-radius: 1rem;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    outline: none;
+    border: none;
+    background-color: #2b7eeb;
+}
+#profile_byo h4 {
+    position: relative;
+    margin-top: 1.5rem;
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+#tree_b {
+    position: relative;
+    display: flex;
+}
+
+#edit_b,
+#Share_b {
+    position: relative;
+    height: 4rem;
+    margin-left: .8rem;
+    width: 18rem;
+    font-size: 2rem;
+    font-weight: 500;
+    background-color: rgb(211, 211, 211);
+    border-radius: .8rem;
+    outline: none;
+    border: none;
+}
+
+#tree_b #add_folow {
+    position: relative;
+    border-radius: .8rem;
+    height: 4rem;
+    width: 4rem;
+    overflow: hidden;
+    margin-left: 1rem;
+    outline: none;
+    border: none;
+}
+
+#add_b1 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#dp_save_states {
+    position: relative;
+    height: 12rem;
+    align-items: center;
+    justify-self: start;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+#all_states {
+    position: relative;
+    height: 9rem;
+    width: 9rem;
+    overflow: hidden;
+    border: .2rem solid black;
+    border-radius: 50%;
+}
+
+#all_states #states_img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#prmanet_states p {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#photo_tag {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    overflow: hidden;
+}
+
+#photo_tag #p_p,
+#p_t {
+    position: relative;
+    height: 3.5rem;
+    width: 50%;
+}
+
+#profilr_tag,
+#profile_photo {
+    position: relative;
+    height: 100%;
+}
+
+/* #all_photo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#all_post,
+#post_tag {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: inline-table;
+    columns: 6;
+    transition: 1s;
+}  */
+#all_photo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#all_post{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    display: inline-table;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+    transition: 1s;
+}
+#post_tag {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-top: 90rem;
+    left: 100%;
+    overflow-x: hidden;
+    display: inline-table;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+    transition: 1s;
+}
+#post_tag img {
+    position: absolute;
+    height: 16rem;
+    width: 13rem;
+    margin: .2rem;
+}
+
+#all_photo img {
+    position: relative;
+    height: 16rem;
+    width: 13rem;
+    margin: .2rem;
+}
+
+#bottam_div {
+    position: fixed;
+    height: 6rem;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    top: 94%;
+    display: flex;
+    align-items: center;
+}
+
+#bottam_div img {
+    height: 4rem;
+    width: 4rem;
+    margin-left: 5.4rem;
+}
+
+#bottam_div #profile_logo {
+    position: relative;
+    border-radius: 50%;
+}
+
+
+@media screen and (min-width: 350px) {
+    html {
+        font-size: 50.5%;
+    }
+
+    #post_tag {
+        top: -73.4rem;
+        left: 100%;
+    }
+
+    #bottam_div {
+        top: 92%;
+    }
+}
+
+@media screen and (min-width: 390px) {
+    html {
+        font-size: 57.5%;
+    }
+
+    #bottam_div {
+        top: 78.3rem;
+    }
+
+    #top_left {
+        top: -4rem;
+    }
+
+    #top_div {
+        height: 4.5rem;
+    }
+} 
+
+@media screen and (min-width: 411px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #bottam_div {
+        top: 93%;
+    }
+
+    #top_left {
+        top: 0;
+    }
+
+    #top_div {
+        height: 4.5rem;
+    }
+    #post_tag{
+        top: -89.5rem;
+    }
+} 

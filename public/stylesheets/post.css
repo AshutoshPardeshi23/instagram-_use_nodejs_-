@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  body, html{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 62.5%;
+  }
+  a{
+    list-style: none;
+    direction: none;
+  }
+
+  #top_div{
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #fff;
+  }
+  #top_1{
+    position: relative;
+    display: flex;
+    font-size: 1.2rem;
+    margin: .7rem;
+  }
+#top_1 img{
+    position: relative;
+    left: 1rem;
+    height: 3rem;
+    margin-right: .5rem;
+    width: 3rem;
+    background-color: seashell;
+}
+#top_1 h1{
+    position: relative;
+    left: .8rem;
+}
+#top_2{
+    position: relative;
+    font-size: 1.6rem;
+    left: -3rem;
+    top: .9rem;
+    color: rgb(52, 208, 255);
+    text-align: center;
+}
+#demo_img{
+    position: relative;
+    width: 100%;
+    height: 44rem;
+    align-items: center;
+    justify-content: center;
+    display: list-item;
+    background-color: rgb(255, 255, 255);
+    top: 4rem;
+    columns: 3;
+}
+#demo_img #d_i{
+    overflow: hidden;
+    position: relative;
+    min-height: 13rem;
+    margin: .2rem;
+    width: 13.5rem;
+    background-color: rgb(187, 187, 187);
+}
+#demo_dottam{
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    top: 5rem;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+}
+#demo_dottam #d_b_l{
+    position: relative;
+    height: 100%;
+    width: 20rem;
+    left: 1rem;
+    display: flex;
+    font-size: 2rem;
+}
+#d_b_l img{
+    position: relative;
+    width: 5rem;
+}
+
+
+#d_b_r{
+    height: 4rem;
+    width: 26rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(192, 183, 183);
+    margin: .6rem;
+    border-radius: 50rem;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+#d_b_r h2{
+    position: relative;
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: 700;
+    top: rem;
+    left: .4rem;
+    color: #ffffff;
+}
+#camere{
+    position: relative;
+    height: 4rem;
+    width: 7rem;
+    margin: 1rem;
+    top: -.5rem;
+    border-radius: 50rem;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+#d_b_r a{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    margin: 1rem;
+    text-decoration: none;
+}
+#bottam_img{
+    position: relative;
+    width: 100%;
+    height: 36rem;
+    top: 5rem;
+    columns: 3;
+    overflow: hidden;
+}
+#bottam_img #b_i{
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    min-height: 17.5rem;
+    margin: .2rem;
+    width: 13.5rem;
+    background-color: rgb(187, 187, 187);
+}
+#scroll{
+    position: fixed;
+    height: 6rem;
+    width: 100%;
+    top: 85%;
+    overflow-y: scroll;
+    text-align: center;
+    scrollbar-width: none;
+    align-items: center;
+}
+#scroll #option{
+    position: relative;
+    height: 100%;
+    width: 60rem;
+    display: flex;
+    align-items: start;
+    background-color: rgba(20, 13, 13, 0.534);
+    border-radius: 50rem;
+    left: 48%;
+}
+#scroll #option p{
+    position: relative;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 1rem;
+    color: rgba(255, 255, 255, 0.596);
+}
+
+
+@media screen and (min-width: 350px){
+    html{
+        font-size: 50.5%;
+    }
+    #top_div{
+        height: 4.5rem;
+    }
+    #d_b_l img{
+        position: relative;
+        width: 5rem;
+        height: 5rem;
+        top: -.5rem;
+    }
+}
+
+ @media screen and (min-width: 390px) {
+    html {
+        font-size: 57.5%;
+    }
+
+    #bottam_div {
+        top: 73rem;
+    }
+
+    #top_left {
+        top: -4rem;
+    }
+
+    #top_div {
+        height: 4.5rem;
+    }
+}  
+
+@media screen and (min-width: 411px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #bottam_div {
+        top: 93%;
+    }
+} 
